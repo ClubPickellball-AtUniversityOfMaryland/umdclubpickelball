@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White */
+    color: #000000; /* Black */
+}
+header {
+    background-color: #e21833; /* Maryland Red */
+    color: #ffffff; /* White */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+header img.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffd200; /* Maryland Gold */
+    padding: 10px 0;
+}
+nav a {
+    color: #000000; /* Black */
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: 600; /* Bold */
+}
+nav a:hover {
+    background-color: #e21833; /* Maryland Red */
+    color: #ffffff; /* White */
+}
+.container {
+    padding: 20px;
+}
+.section {
+    margin: 20px 0;
+}
+h2, h3 {
+    font-family: 'Crimson Text', Georgia, serif;
+}
+.officers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.officer {
+    margin: 20px;
+    text-align: center;
+}
+.officer img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ccc; /* Placeholder background color */
+    cursor: pointer;
+}
+.officer h3, .officer p {
+    font-weight: normal; /* Ensure normal font weight */
+}
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.featured-article {
+    margin: 20px;
+    max-width: 300px;
+}
+footer {
+    background-color: #000000; /* Black */
+    color: #ffffff; /* White */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Overlay styles */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.overlay-content {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+}
+.close-btn {
+    background-color: #e21833; /* Maryland Red */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.close-btn:hover {
+    background-color: #ffffff;
+    color: #e21833;
+}
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+.mySlides {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
